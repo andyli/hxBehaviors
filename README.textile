@@ -1,0 +1,1 @@
+*hxSteeringBehaviors* is a haXe port of "Eugene Zatepyakin":http://blog.inspirit.ru/ 's "SteeringBehaviors":http://code.google.com/p/in-spirit/source/browse/#svn/trunk/projects/SteeringBehaviors.
