@@ -15,13 +15,13 @@ package hxSteeringBehaviors;
 		public static var globalUp:Vector3D = new Vector3D(0, 0.1, 0);
 		
 		// BOUNDS OPTIONS
-		inline public static var EDGE_NONE:UInt = 0;
-		inline public static var EDGE_WRAP:UInt = 1;
-		inline public static var EDGE_BOUNCE:UInt = 2;
+		inline public static var EDGE_NONE:Int = 0;
+		inline public static var EDGE_WRAP:Int = 1;
+		inline public static var EDGE_BOUNCE:Int = 2;
 		
-		public var boundsCentre:Vector3D ;
-		public var boundsRadius:Int ;
-		public var edgeBehavior:UInt ;
+		public var boundsCentre:Vector3D;
+		public var boundsRadius:Int;
+		public var edgeBehavior:Int;
 		
 		public var mass:Float;
 		public var maxSpeed:Float;
@@ -41,6 +41,8 @@ package hxSteeringBehaviors;
 		
 		//public var next:Vehicle;
 		public var behaviorList:Iterable<AbstractBehavior>;
+
+		public var onUpdate:Void->Void;
 		
 		public function new(?position:Vector3D, ?behaviorList:Iterable<AbstractBehavior>) 
 		{
@@ -145,6 +147,8 @@ package hxSteeringBehaviors;
 				
 				up.setCross(side, forward);
 			}
+
+			if (onUpdate != null) onUpdate();
 		}
 		
 		public function boundsCheck():Void

@@ -1,7 +1,7 @@
--main Test
--swf bin/Test.swf
+-main Example1
+-swf bin/Example1.swf
 -swf-version 10
 -swf-header 640:480:25:FFFFFF
 -lib sandy
 
--cmd open bin/Test.swf
+-cmd open bin/Example1.swf
