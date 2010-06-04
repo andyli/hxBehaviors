@@ -44,7 +44,7 @@ class Example1 extends Sprite{
 	}
 
 	private function init(e:Event = null):Void {
-		camera = new Camera3D( stage.stageWidth, stage.stageHeight );
+		camera = new Camera3D( 640, 480 );
 		camera.z = -400;
 
 		var root:Group = new Group();
@@ -75,7 +75,7 @@ class Example1 extends Sprite{
 			veh.boundsRadius = 400;
 			veh.velocity.setUnitRandom();
 			veh.velocity.scaleBy(3);
-			veh.behaviorList = cast [flocking];
+			veh.behaviorList = cast([flocking],Array<Dynamic>);
 			veh.onUpdate = callback(onVehUpdate,t,veh);
 			fxObjs.add(veh);
 		}
@@ -105,6 +105,12 @@ class Example1 extends Sprite{
 	}
 
 	static public function main():Void {
+		#if flash
 		Lib.current.addChild(new Example1());
+		#else
+		Lib.create(function(){
+			Lib.current.addChild(new Example1());
+		},640,480,25,0xFFFFFF,Lib.HARDWARE);
+		#end
 	}
 }

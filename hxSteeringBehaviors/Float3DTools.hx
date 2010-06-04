@@ -12,7 +12,7 @@ package hxSteeringBehaviors;
 		
 		inline public static var ZERO:Float3D = new Vector3D();
 		
-		public static var seed:UInt = 1;//int(Math.random() * 0x7FFFFFFE) + 1;
+		public static var seed:Int = 1;//int(Math.random() * 0x7FFFFFFE) + 1;
 		
 		inline static public function setTo(that:Float3D, ?x:Float = 0, ?y:Float = 0, ?z:Float = 0):Void
 		{

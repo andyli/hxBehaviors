@@ -25,7 +25,7 @@ package hxSteeringBehaviors.behavior.combined;
 		public var wanderRate:Float ;
 		public var wanderDirection:Vector3D ;
 		
-		public var slowingDistance:Int ;
+		public var slowingDistance:Float ;
 		
 		//
 		var s1:Vector3D ;
@@ -33,8 +33,8 @@ package hxSteeringBehaviors.behavior.combined;
 		var local:Vector3D ;
 		var followTarget:Vector3D ;
 		
-		public var leaderAvoidWidth:Int ;
-		public var leaderAvoidLength:Int ;
+		public var leaderAvoidWidth:Float ;
+		public var leaderAvoidLength:Float ;
 		public var fastslow:Bool;
 		
 		public var leaderTarget:Vector3D ;

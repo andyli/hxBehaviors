@@ -1,0 +1,9 @@
+-main Example1
+-cpp ../bin
+-lib nme
+-lib sandy
+-cp ..
+--remap flash:nme
+--remap neash:nme
+
+-cmd ./../bin/Example1

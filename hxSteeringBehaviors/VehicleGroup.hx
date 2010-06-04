@@ -36,7 +36,7 @@ package hxSteeringBehaviors;
 		{	
 			for (veh in fastList) 
 			{
-				for (behave in veh.behaviorList != null ? veh.behaviorList : defaultBehavior)
+				for (behave in (veh.behaviorList != null ? veh.behaviorList : defaultBehavior))
 				{
 					behave.apply(veh);
 				}
