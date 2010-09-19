@@ -1,0 +1,7 @@
+-main hxSteeringBehaviors.examples.Example1
+-cpp bin
+-lib nme
+-lib sandy
+--remap flash:nme
+
+#-cmd ./bin/Example1

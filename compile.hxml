@@ -1,7 +1,1 @@
--main Example2
--swf bin/Example2.swf
--swf-version 10
--swf-header 640:480:25:111111
--lib sandy
-
--cmd open bin/Example2.swf
+example1-cpp.hxml

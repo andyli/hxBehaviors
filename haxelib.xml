@@ -1,0 +1,6 @@
+<project name="hxSteeringBehaviors" url="http://github.com/andyli/hxSteeringBehaviors" license="BSD">
+    <user name="andyli"/>
+    <tag v="cross"/>
+    <description>Simulates 3D steering/flocking behaviors between objects.</description>
+    <version name="0.1">First release.</version>
+</project>

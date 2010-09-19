@@ -1,3 +1,5 @@
+package hxSteeringBehaviors.examples;
+
 import flash.Lib;
 import flash.display.Sprite;
 import flash.events.Event;

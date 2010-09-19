@@ -1,0 +1,7 @@
+-main hxSteeringBehaviors.examples.Example1
+-swf bin/Example1.swf
+-swf-version 10
+-swf-header 640:480:25:FFFFFF
+-lib sandy
+
+#-cmd open bin/Example1.swf
