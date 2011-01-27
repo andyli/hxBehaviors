@@ -1,6 +1,6 @@
-package hxSteeringBehaviors; 
-	import hxSteeringBehaviors.behavior.AbstractBehavior;
-	using hxSteeringBehaviors.Float3DTools;
+package hxBehaviors; 
+	import hxBehaviors.behavior.AbstractBehavior;
+	using hxBehaviors.Float3DTools;
 
 	import flash.geom.Vector3D;
 

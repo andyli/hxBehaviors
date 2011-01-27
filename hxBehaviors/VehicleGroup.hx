@@ -1,8 +1,8 @@
-package hxSteeringBehaviors; 
+package hxBehaviors; 
 
 	import haxe.FastList;
 	
-	import hxSteeringBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.AbstractBehavior;
 
 	/**
 	 * Vehicle Group

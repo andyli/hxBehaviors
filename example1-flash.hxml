@@ -1,4 +1,4 @@
--main hxSteeringBehaviors.examples.Example1
+-main hxBehaviors.examples.Example1
 -swf bin/Example1.swf
 -swf-version 10
 -swf-header 640:480:25:FFFFFF

@@ -1,4 +1,4 @@
-package hxSteeringBehaviors; 
+package hxBehaviors; 
 
 typedef Float3D = {
 	var x:Float;

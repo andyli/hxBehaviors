@@ -1,10 +1,10 @@
-package hxSteeringBehaviors.behavior.combined; 
+package hxBehaviors.behavior.combined; 
 	
-	import hxSteeringBehaviors.Vehicle;
-	import hxSteeringBehaviors.behavior.AbstractBehavior;
-	import hxSteeringBehaviors.behavior.Alignment;
-	import hxSteeringBehaviors.behavior.Cohesion;
-	import hxSteeringBehaviors.behavior.Separation;
+	import hxBehaviors.Vehicle;
+	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Alignment;
+	import hxBehaviors.behavior.Cohesion;
+	import hxBehaviors.behavior.Separation;
 
 	/**
 	 * Flocking Behavior

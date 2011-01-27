@@ -1,4 +1,4 @@
-package hxSteeringBehaviors; 
+package hxBehaviors; 
 
 	import flash.geom.Vector3D;
 	

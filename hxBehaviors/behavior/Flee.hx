@@ -1,8 +1,8 @@
-package hxSteeringBehaviors.behavior; 
-	using hxSteeringBehaviors.Float3DTools;
-	import hxSteeringBehaviors.Vehicle;
-	import hxSteeringBehaviors.behavior.AbstractBehavior;
-	import hxSteeringBehaviors.Float3D;
+package hxBehaviors.behavior; 
+	using hxBehaviors.Float3DTools;
+	import hxBehaviors.Vehicle;
+	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.Float3D;
 
 	/**
 	 * @author Eugene Zatepyakin

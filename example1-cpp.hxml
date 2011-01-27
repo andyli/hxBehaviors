@@ -1,4 +1,4 @@
--main hxSteeringBehaviors.examples.Example1
+-main hxBehaviors.examples.Example1
 -cpp bin
 -lib nme
 -lib sandy

@@ -1,4 +1,4 @@
-package hxSteeringBehaviors.examples;
+package hxBehaviors.examples;
 
 import flash.Lib;
 import flash.display.Sprite;
@@ -6,20 +6,20 @@ import flash.events.Event;
 
 import haxe.FastList;
 
-import hxSteeringBehaviors.Vehicle;
-import hxSteeringBehaviors.VehicleGroup;
-import hxSteeringBehaviors.behavior.AbstractBehavior;
-import hxSteeringBehaviors.behavior.Alignment;
-import hxSteeringBehaviors.behavior.Arrival;
-import hxSteeringBehaviors.behavior.Cohesion;
-import hxSteeringBehaviors.behavior.Flee;
-import hxSteeringBehaviors.behavior.Seek;
-import hxSteeringBehaviors.behavior.Separation;
-import hxSteeringBehaviors.behavior.UnalignedCollisionAvoidance;
-import hxSteeringBehaviors.behavior.Wander;
-import hxSteeringBehaviors.behavior.combined.Flocking;
-import hxSteeringBehaviors.behavior.combined.LeaderFollowing;
-using hxSteeringBehaviors.Float3DTools;
+import hxBehaviors.Vehicle;
+import hxBehaviors.VehicleGroup;
+import hxBehaviors.behavior.AbstractBehavior;
+import hxBehaviors.behavior.Alignment;
+import hxBehaviors.behavior.Arrival;
+import hxBehaviors.behavior.Cohesion;
+import hxBehaviors.behavior.Flee;
+import hxBehaviors.behavior.Seek;
+import hxBehaviors.behavior.Separation;
+import hxBehaviors.behavior.UnalignedCollisionAvoidance;
+import hxBehaviors.behavior.Wander;
+import hxBehaviors.behavior.combined.Flocking;
+import hxBehaviors.behavior.combined.LeaderFollowing;
+using hxBehaviors.Float3DTools;
 
 import sandy.core.Scene3D;
 import sandy.core.scenegraph.ATransformable;
