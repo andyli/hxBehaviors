@@ -1,13 +1,13 @@
 package hxBehaviors.behavior; 
 
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	using hxBehaviors.Float3DTools;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class UnalignedCollisionAvoidance extends AbstractBehavior {
+	class UnalignedCollisionAvoidance extends Behavior {
 		
 		public var collisionDangerThreshold:Int ; // should be around 3 * Vehicle Radius
 		public var predict:Int ;

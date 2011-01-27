@@ -1,13 +1,13 @@
 package hxBehaviors.behavior; 
 
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	using hxBehaviors.Float3DTools;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Cohesion extends AbstractBehavior {
+	class Cohesion extends Behavior {
 		
 		public var cohereDist:Float;
 		public var cohereAngleCos:Float;

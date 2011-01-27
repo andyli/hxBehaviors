@@ -2,14 +2,14 @@ package hxBehaviors.behavior;
 
 	using hxBehaviors.Float3DTools;
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 
 	import flash.geom.Vector3D;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Wander extends AbstractBehavior {
+	class Wander extends Behavior {
 		
 		inline static private var SQRT2:Float = Math.sqrt(2);
 		

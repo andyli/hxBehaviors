@@ -2,7 +2,7 @@ package hxBehaviors;
 
 	import haxe.FastList;
 	
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 
 	/**
 	 * Vehicle Group
@@ -18,14 +18,11 @@ package hxBehaviors;
 
 		private var fastList:FastList<Vehicle>;
 		
-		public var defaultBehavior:Iterable<AbstractBehavior>;
-		
 		/**
 		 * @param defaultBehavior is used if Vehicle doesn't have any
 		 */
-		public function new(defaultBehavior:Iterable<AbstractBehavior>)
+		public function new()
 		{
-			this.defaultBehavior = defaultBehavior;
 			fastList = new FastList<Vehicle>();
 		}
 		
@@ -36,7 +33,7 @@ package hxBehaviors;
 		{	
 			for (veh in fastList) 
 			{
-				for (behave in (veh.behaviorList != null ? veh.behaviorList : defaultBehavior))
+				for (behave in veh.behaviorList)
 				{
 					behave.apply(veh);
 				}
@@ -55,7 +52,7 @@ package hxBehaviors;
 			fastList.add(veh);
 		}
 		
-		public function addVehicles(vehs:Iterable<Vehicle>):Void
+		inline public function addVehicles(vehs:Iterable<Vehicle>):Void
 		{
 			for (veh in vehs){
 				fastList.add(veh);
@@ -77,7 +74,6 @@ package hxBehaviors;
 		 */
 		public function clear():Void
         {
-			while (!fastList.isEmpty())
-				fastList.pop();
+			fastList = new FastList<Vehicle>();
         }
 	}

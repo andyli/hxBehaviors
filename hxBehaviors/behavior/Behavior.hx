@@ -8,7 +8,7 @@ package hxBehaviors.behavior;
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class AbstractBehavior 
+	class Behavior 
 	 {		
 		public function new() { 
 			accumulator = new Vector3D();
@@ -16,7 +16,7 @@ package hxBehaviors.behavior;
 				
 		public var accumulator:Vector3D;
 		
-		//public var next:AbstractBehavior;
+		//public var next:Behavior;
 		
 		public function apply(veh:Vehicle):Void {}
 		

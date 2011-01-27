@@ -8,7 +8,7 @@ import haxe.FastList;
 
 import hxBehaviors.Vehicle;
 import hxBehaviors.VehicleGroup;
-import hxBehaviors.behavior.AbstractBehavior;
+import hxBehaviors.behavior.Behavior;
 import hxBehaviors.behavior.Alignment;
 import hxBehaviors.behavior.Arrival;
 import hxBehaviors.behavior.Cohesion;
@@ -56,7 +56,7 @@ class Example1 extends Sprite{
 		//var leaderFollowing = new LeaderFollowing();
 		//var separation = new Separation();
 		
-		vehicleGroup = new VehicleGroup([]);
+		vehicleGroup = new VehicleGroup();
 		
 		var fxObjs = new FastList<Vehicle>();
 		for (i in 0...50) {

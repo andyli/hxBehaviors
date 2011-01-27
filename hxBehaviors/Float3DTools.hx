@@ -10,7 +10,7 @@ package hxBehaviors;
 	 */
 	class Float3DTools {
 		
-		inline public static var ZERO:Float3D = new Vector3D();
+		public static var ZERO:Float3D = new Vector3D();
 		
 		public static var seed:Int = 1;//int(Math.random() * 0x7FFFFFFE) + 1;
 		
@@ -154,7 +154,7 @@ package hxBehaviors;
 			return new Vector3D(x, y, z);
 		}
 
-		inline static public function approximateLength(that:Float3D):Float
+		static public function approximateLength(that:Float3D):Float
 		{
 			var a:Float = that.x;
 			if (a < 0) a = -a;
@@ -179,7 +179,7 @@ package hxBehaviors;
 			return a * 0.9375 + (b + c) * 0.375;
 		}
 		
-		inline static public function distance(that:Float3D, v:Float3D):Float
+		static public function distance(that:Float3D, v:Float3D):Float
 		{
 			var xd:Float = that.x - v.x;
 			var yd:Float = that.y - v.y;
@@ -188,7 +188,7 @@ package hxBehaviors;
 			return Math.sqrt( xd * xd + yd * yd + zd * zd );
 		}
 		
-		inline static public function approximateDistance(that:Float3D, v:Float3D):Float
+		static public function approximateDistance(that:Float3D, v:Float3D):Float
 		{
 			var xd:Float = that.x - v.x;
 			var yd:Float = that.y - v.y;

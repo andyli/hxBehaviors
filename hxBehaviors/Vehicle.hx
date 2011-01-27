@@ -1,5 +1,5 @@
 package hxBehaviors; 
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	using hxBehaviors.Float3DTools;
 
 	import flash.geom.Vector3D;
@@ -10,7 +10,7 @@ package hxBehaviors;
 	 * @author Eugene Zatepyakin
 	 */
 	class Vehicle 
-	 {		
+	{		
 				
 		public static var globalUp:Vector3D = new Vector3D(0, 0.1, 0);
 		
@@ -40,11 +40,11 @@ package hxBehaviors;
 		public var vehicleRadius:Float;
 		
 		//public var next:Vehicle;
-		public var behaviorList:Iterable<AbstractBehavior>;
+		public var behaviorList:Iterable<Behavior>;
 
 		public var onUpdate:Void->Void;
 		
-		public function new(?position:Vector3D, ?behaviorList:Iterable<AbstractBehavior>) 
+		public function new(?position:Vector3D, ?behaviorList:Iterable<Behavior>) 
 		{
 			
 			boundsCentre = new Vector3D();
@@ -55,7 +55,7 @@ package hxBehaviors;
 				this.position = position;
 			}
 			
-			this.behaviorList = behaviorList;
+			this.behaviorList = behaviorList == null ? [] : behaviorList;
 		}
 
 		public function identity():Void

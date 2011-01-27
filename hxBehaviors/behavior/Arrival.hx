@@ -3,14 +3,14 @@ package hxBehaviors.behavior;
 	import hxBehaviors.Float3D;
 	using hxBehaviors.Float3DTools;
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 
 	import flash.geom.Vector3D;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Arrival extends AbstractBehavior {
+	class Arrival extends Behavior {
 		
 		public var target:Float3D;
 		public var slowingDistance:Int ;

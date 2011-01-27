@@ -1,13 +1,13 @@
 package hxBehaviors.behavior; 
 
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	using hxBehaviors.Float3DTools;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Alignment extends AbstractBehavior {
+	class Alignment extends Behavior {
 		
 		public var alignDist:Float;
 		public var alignAngleCos:Float;

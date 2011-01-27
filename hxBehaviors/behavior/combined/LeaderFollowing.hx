@@ -3,7 +3,7 @@ package hxBehaviors.behavior.combined;
 	import hxBehaviors.Float3DTools;
 	using hxBehaviors.Float3DTools;
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	import hxBehaviors.Float3D;
 
 	import flash.geom.Vector3D;
@@ -14,7 +14,7 @@ package hxBehaviors.behavior.combined;
 	 * 
 	 * @author Eugene Zatepyakin
 	 */
-	class LeaderFollowing extends AbstractBehavior {
+	class LeaderFollowing extends Behavior {
 		// WONDER OPTIONS
 		inline static private var SQRT2:Float = Math.sqrt(2);
 		

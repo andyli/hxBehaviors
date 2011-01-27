@@ -6,7 +6,7 @@ package hxBehaviors.behavior;
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Separation extends AbstractBehavior {
+	class Separation extends Behavior {
 		
 		public var separateDist:Float;
 		public var separateAngleCos:Float;

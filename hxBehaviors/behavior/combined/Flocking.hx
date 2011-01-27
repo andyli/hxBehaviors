@@ -1,7 +1,7 @@
 package hxBehaviors.behavior.combined; 
 	
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	import hxBehaviors.behavior.Alignment;
 	import hxBehaviors.behavior.Cohesion;
 	import hxBehaviors.behavior.Separation;
@@ -12,7 +12,7 @@ package hxBehaviors.behavior.combined;
 	 * 
 	 * @author Eugene Zatepyakin
 	 */
-	class Flocking extends AbstractBehavior {
+	class Flocking extends Behavior {
 		
 		public var separate:Separation;
 		public var align:Alignment;

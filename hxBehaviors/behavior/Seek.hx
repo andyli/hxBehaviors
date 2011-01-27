@@ -1,13 +1,13 @@
 package hxBehaviors.behavior; 
 	using hxBehaviors.Float3DTools;
 	import hxBehaviors.Vehicle;
-	import hxBehaviors.behavior.AbstractBehavior;
+	import hxBehaviors.behavior.Behavior;
 	import hxBehaviors.Float3D;
 
 	/**
 	 * @author Eugene Zatepyakin
 	 */
-	class Seek extends AbstractBehavior {
+	class Seek extends Behavior {
 		
 		public var target:Float3D ;
 		
